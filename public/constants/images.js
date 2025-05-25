@@ -28,6 +28,8 @@ import testimony01 from '../assets/testimony01.webp';
 import testimony02 from '../assets/testimony02.webp';
 import testimony03 from '../assets/testimony03.webp';
 import testimony04 from '../assets/testimony04.webp';
+import history01 from '../assets/history01.webp'
+import history02 from '../assets/history02.webp'
 
 // Assign the object to a variable
 const images = {
@@ -61,6 +63,8 @@ const images = {
   poison01,
   poison02,
   poison03,
+  history01,
+  history02,
 };
 
 // Export the variable as the default export
