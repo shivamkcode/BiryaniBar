@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const AboutUs = () => {
   return (
-    <div className='bg-[url("/assets/bg.png")] bg-cover bg-center bg-no-repeat flex items-center justify-center paddingX paddingY relative'>
+    <div className='bg-[url("/assets/bg.webp")] bg-cover bg-center bg-no-repeat flex items-center justify-center paddingX paddingY relative'>
       <div className="flex flex-col items-center justify-center gap-16 z-10 lg:flex-row">
         <div className="flex flex-col justify-center items-end gap-4 lg:gap-8 text-right">
           <h2 className="h2_title">

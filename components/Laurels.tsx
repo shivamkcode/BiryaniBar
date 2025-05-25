@@ -6,7 +6,7 @@ import data from "@/public/constants/data";
 
 const Laurels = () => {
   return (
-    <div className='bg-[url("/assets/bg.png")] bg-cover bg-center bg-no-repeat paddingX paddingY flex flex-col lg:flex-row justify-center items-center gap-20'>
+    <div className='bg-[url("/assets/bg.webp")] bg-cover bg-center bg-no-repeat paddingX paddingY flex flex-col lg:flex-row justify-center items-center gap-20'>
       <div className="flex flex-col justify-center gap-12">
         <div>
           <SubHeading title="Awards & Recognition" />

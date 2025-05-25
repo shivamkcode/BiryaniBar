@@ -5,7 +5,7 @@ import SubHeading from "./SubHeading";
 import Sign from "./Sign";
 const Chef = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 paddingX paddingY bg-[url('/assets/bg.png')] bg-cover bg-center bg-no-repeat relative">
+    <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 paddingX paddingY bg-[url('/assets/bg.webp')] bg-cover bg-center bg-no-repeat relative">
       <Sign direction="left" />
       <div>
         <Image src={images.chef} alt="chef" />

@@ -1,5 +1,5 @@
-import bg from '../assets/bg.png';
-import chef from '../assets/chef.png';
+import bg from '../assets/bg.webp';
+import chef from '../assets/chef.webp';
 import G from '../assets/G.png';
 import gallery01 from '../assets/gallery01.png';
 import gallery02 from '../assets/gallery02.png';
@@ -10,9 +10,12 @@ import logo from '../assets/logo.png';
 import menu from '../assets/menu.png';
 import overlaybg from '../assets/overlaybg.png';
 import spoon from '../assets/spoon.svg';
-import welcome from '../assets/welcome.png';
-import findus from '../assets/findus.png';
-import laurels from '../assets/laurels.png';
+import welcome from '../assets/welcome.webp';
+import findus from '../assets/findus.webp';
+import laurels from '../assets/laurels.webp';
+import poison01 from '../assets/poison01.webp';
+import poison02 from '../assets/poison02.webp';
+import poison03 from '../assets/poison03.webp';
 import award01 from '../assets/award01.png';
 import award02 from '../assets/award02.png';
 import award03 from '../assets/award03.png';
@@ -57,6 +60,9 @@ const images = {
   testimony02,
   testimony03,
   testimony04,
+  poison01,
+  poison02,
+  poison03,
 };
 
 // Export the variable as the default export

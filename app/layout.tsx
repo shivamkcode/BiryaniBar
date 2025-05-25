@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Upright, Open_Sans } from "next/font/google";
 import "./globals.css";
+import { Footer, Navbar } from "@/components";
 
 const cormorantUpright = Cormorant_Upright({
   variable: "--font-cormorant-upright",
@@ -26,9 +27,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${cormorantUpright.variable} ${openSans.variable} antialiased`}
+        className={`${cormorantUpright.variable} ${openSans.variable} antialiased bg-[url("/assets/wave_element.svg")] bg-black bg-cover bg-center bg-no-repeat`}
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

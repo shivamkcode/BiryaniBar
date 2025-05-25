@@ -4,7 +4,7 @@ import Image from "next/image";
 import images from "@/public/constants/images";
 import Button from "./Button";
 
-const Header = () => {
+const Hero = () => {
   return (
     <div className="text-white flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-32 paddingX paddingY relative">
       <div className="flex flex-1 flex-col justify-center items-start lg:pl-10">
@@ -40,4 +40,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Hero;

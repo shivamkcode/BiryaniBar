@@ -5,6 +5,7 @@ import Image from "next/image";
 import Button from "./Button";
 import data from "@/public/constants/data";
 import Sign from "./Sign";
+import MenuItem from "./MenuItem";
 
 const SpecialMenu = () => {
   return (
@@ -20,16 +21,7 @@ const SpecialMenu = () => {
             Wine & Beer
           </h3>
           {data.wines.map((wine, index) => (
-            <div className="flex flex-col gap-1 lg:gap-2" key={index}>
-              <div className="flex justify-between gap-2 items-center">
-                <p className="text-golden text-2xl font-base">{wine.title}</p>
-                <div className="flex flex-row gap-8 items-center">
-                  <div className="w-30 h-[1px] bg-grey" />
-                  <p className="text-white text-2xl font-base">{wine.price}</p>
-                </div>
-              </div>
-              <p className="text-grey font-alt">{wine.tags}</p>
-            </div>
+            <MenuItem key={index} item={wine} />
           ))}
         </div>
         <div className="flex w-full h-full">
@@ -40,20 +32,7 @@ const SpecialMenu = () => {
             Cocktails
           </h3>
           {data.cocktails.map((cocktail, index) => (
-            <div className="flex flex-col gap-1 lg:gap-2" key={index}>
-              <div className="flex flex-row justify-between gap-2 items-center">
-                <p className="text-golden text-2xl font-base">
-                  {cocktail.title}
-                </p>
-                <div className="flex flex-row gap-8 items-center">
-                  <div className="w-30 h-[1px] bg-grey" />
-                  <p className="text-white text-2xl font-base">
-                    {cocktail.price}
-                  </p>
-                </div>
-              </div>
-              <p className="text-grey font-alt">{cocktail.tags}</p>
-            </div>
+            <MenuItem key={index} item={cocktail} />
           ))}
         </div>
       </div>

@@ -3,37 +3,33 @@ import {
   AboutUs,
   Chef,
   FindUs,
-  Footer,
   Gallery,
-  Header,
   Intro,
   Laurels,
-  Navbar,
   Reservations,
   SpecialMenu,
   Testimony,
 } from "@/components";
 import HappyHour from "@/components/HappyHour";
+import Hero from "@/components/Header";
 import Poison from "@/components/Poison";
 
 const Home = () => {
   return (
-    <div className='bg-[url("/assets/wave_element.png")] bg-black bg-cover bg-center bg-no-repeat'>
-      <Navbar />
-      <Header />
+    <div>
+      <Hero />
       <AboutUs />
       <Reservations />
       <SpecialMenu />
       <Chef />
       <About />
-      <Testimony />
       <HappyHour />
+      <Testimony />
       <Intro />
       <Laurels />
       <Poison />
       <Gallery />
       <FindUs />
-      <Footer />
     </div>
   );
 };

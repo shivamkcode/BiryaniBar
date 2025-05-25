@@ -6,7 +6,7 @@ import images from "@/public/constants/images";
 
 const FindUs = () => {
   return (
-    <div className="bg-[url('/assets/bg.png')] bg-cover bg-center bg-no-repeat paddingX paddingY flex flex-col items-center lg:flex-row gap-20">
+    <div className="bg-[url('/assets/bg.webp')] bg-cover bg-center bg-no-repeat paddingX paddingY flex flex-col items-center lg:flex-row gap-20">
       <div className="flex flex-1 flex-col gap-10 items-start">
         <div className="flex flex-col gap-2">
           <SubHeading title="Contact" />

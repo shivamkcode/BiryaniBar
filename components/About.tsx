@@ -7,7 +7,7 @@ import Sign from "./Sign";
 
 const About = () => {
   return (
-    <div className='flex flex-col-reverse lg:flex-row gap-10 lg:gap-20 paddingX paddingY bg-[url("/assets/bg.png")] bg-cover bg-center bg-no-repeat relative'>
+    <div className='flex flex-col-reverse lg:flex-row gap-10 lg:gap-20 paddingX paddingY bg-[url("/assets/bg.webp")] bg-cover bg-center bg-no-repeat relative'>
       <Sign direction="left" />
       <div className="flex-1 self-end">
         <Image src={images.about02} alt="about" />

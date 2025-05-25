@@ -110,6 +110,165 @@ const testimony = [
   },
 ];
 
-const data = { wines, cocktails, awards, testimony };
+const foodMenu = [
+  {
+    title: 'Chicken Biryani',
+    price: '$18',
+    tags: 'Basmati rice | tender chicken | aromatic spices',
+  },
+  {
+    title: 'Vegetable Biryani',
+    price: '$16',
+    tags: 'Basmati rice | mixed vegetables | aromatic spices',
+  },
+  {
+    title: 'Lamb Biryani',
+    price: '$20',
+    tags: 'Basmati rice | tender lamb | aromatic spices',
+  },
+  {
+    title: 'Paneer Biryani',
+    price: '$17',
+    tags: 'Basmati rice | paneer | aromatic spices',
+  },
+  {
+    title: 'Chicken Curry',
+    price: '$15',
+    tags: 'Tender chicken | rich curry sauce',
+  },
+  {
+    title: 'Vegetable Curry',
+    price: '$14',
+    tags: 'Mixed vegetables | rich curry sauce',
+  },
+  {
+    title: 'Lamb Curry',
+    price: '$17',
+    tags: 'Tender lamb | rich curry sauce',
+  },
+  {
+    title: 'Paneer Curry',
+    price: '$16',
+    tags: 'Paneer | rich curry sauce',
+  },
+  {
+    title: 'Chicken Tikka',
+    price: '$16',
+    tags: 'Tender chicken | tikka sauce',
+  },
+  {
+    title: 'Vegetable Tikka',
+    price: '$15',
+    tags: 'Mixed vegetables | tikka sauce',
+  },
+  {
+    title: 'Lamb Tikka',
+    price: '$18',
+    tags: 'Tender lamb | tikka sauce',
+  },
+  {
+    title: 'Paneer Tikka',
+    price: '$17',
+    tags: 'Paneer | tikka sauce',
+  },
+];
+
+const drinksMenu = [
+  {
+    title: 'Mango Lassi',
+    price: '$5',
+    tags: 'Mango | yogurt | sugar',
+  },
+  {
+    title: 'Sweet Lassi',
+    price: '$4',
+    tags: 'Yogurt | sugar',
+  },
+  {
+    title: 'Salted Lassi',
+    price: '$4',
+    tags: 'Yogurt | salt',
+  },
+  {
+    title: 'Masala Chai',
+    price: '$3',
+    tags: 'Tea | milk | spices',
+  },
+  {
+    title: 'Green Tea',
+    price: '$3',
+    tags: 'Green tea | honey',
+  },
+  {
+    title: 'Black Tea',
+    price: '$3',
+    tags: 'Black tea | milk',
+  },
+  {
+    title: 'Coffee',
+    price: '$3',
+    tags: 'Coffee | milk',
+  },
+  {
+    title: 'Hot Chocolate',
+    price: '$4',
+    tags: 'Chocolate | milk',
+  },
+  {
+    title: 'Fresh Juice',
+    price: '$5',
+    tags: 'Fresh fruit juice',
+  },
+  {
+    title: 'Soda',
+    price: '$2',
+    tags: 'Carbonated water | flavoring',
+  },
+];
+
+const dessertMenu = [
+  {
+    title: 'Gulab Jamun',
+    price: '$6',
+    tags: 'Milk solids | sugar syrup',
+  },
+  {
+    title: 'Rasmalai',
+    price: '$7',
+    tags: 'Cottage cheese | milk | sugar',
+  },
+  {
+    title: 'Kheer',
+    price: '$6',
+    tags: 'Rice | milk | sugar',
+  },
+  {
+    title: 'Ice Cream',
+    price: '$5',
+    tags: 'Vanilla | chocolate | strawberry',
+  },
+  {
+    title: 'Cake',
+    price: '$7',
+    tags: 'Chocolate | vanilla | strawberry',
+  },
+  {
+    title: 'Pastry',
+    price: '$6',
+    tags: 'Chocolate | vanilla | strawberry',
+  },
+  {
+    title: 'Fruit Salad',
+    price: '$5',
+    tags: 'Mixed fruits',
+  },
+  {
+    title: 'Yogurt',
+    price: '$4',
+    tags: 'Plain | flavored',
+  },
+];
+
+const data = { wines, cocktails, awards, testimony, foodMenu, drinksMenu, dessertMenu };
 
 export default data;
