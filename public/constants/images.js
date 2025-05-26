@@ -30,6 +30,7 @@ import testimony03 from '../assets/testimony03.webp';
 import testimony04 from '../assets/testimony04.webp';
 import history01 from '../assets/history01.webp'
 import history02 from '../assets/history02.webp'
+import B from '../assets/B.svg'
 
 // Assign the object to a variable
 const images = {
@@ -65,6 +66,7 @@ const images = {
   poison03,
   history01,
   history02,
+  B,
 };
 
 // Export the variable as the default export

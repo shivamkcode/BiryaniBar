@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col gap-6 flex-1 items-center justify-center">
-            <h2 className="h2_title uppercase">Gericht</h2>
+            <h2 className="h2_title uppercase font-semibold text-center">Biryani Bar</h2>
             <div className="flex flex-col gap-4 items-center justify-center text-center">
               <p className="text-white">
                 &quot;The best way to find yourself is to lose yourself in the

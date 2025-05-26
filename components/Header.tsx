@@ -23,8 +23,8 @@ const Hero = () => {
         <Image src={images.welcome} alt="welcome" />
       </div>
       <div className="absolute top-1/2 left-0 -translate-y-1/2 -rotate-90 text-grey text-sm md:text-base hidden lg:flex gap-8">
+        <h4>#Biryani</h4>
         <h4>#Bar</h4>
-        <h4>#Gericht</h4>
       </div>
       <div className="absolute right-0 bottom-28 items-center rotate-90  hidden lg:flex gap-2">
         <div

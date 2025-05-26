@@ -3,8 +3,6 @@
 import React, { useState } from "react";
 import { Menu } from "@deemlol/next-icons";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
-import images from "../public/constants/images";
-import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -42,7 +40,8 @@ const Navbar = () => {
   return (
     <nav className="w-full flex justify-between items-center bg-black p-6 paddingX text-white">
       <Link href="/" className="flex justify-start items-center">
-        <Image className="w-40" src={images.gericht} alt="logo" />
+        {/* <Image className="w-40" src={images.gericht} alt="logo" /> */}
+        <h3 className="text-4xl font-semibold font-base uppercase">BÍryanÍ Bar</h3>
       </Link>
       <div className="flex-1 hidden lg:flex justify-center items-center list-none gap-8 font-alt">
         {navLinks.map((link, index) => (

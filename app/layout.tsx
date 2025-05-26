@@ -15,7 +15,10 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Biryani Bar",
+  title: {
+    default: "Biryani Bar",
+    template: "%s | Biryani Bar",
+  },
   description: "Biryani Bar",
 };
 

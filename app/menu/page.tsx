@@ -3,6 +3,11 @@ import Menu from "@/components/Menu";
 import HappyHour from "@/components/HappyHour";
 import { Gallery, Reservations } from "@/components";
 import Hero from "@/components/Hero";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Menu',
+};
 
 const MenuPage = () => {
   return (
