@@ -25,7 +25,7 @@ const Home = () => {
       <About />
       <HappyHour />
       <Testimony />
-      <Intro />
+      <Intro src="/assets/meal.mp4" />
       <Laurels />
       <Poison />
       <Gallery />

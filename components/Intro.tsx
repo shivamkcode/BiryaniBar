@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 import { Play, Pause } from "@deemlol/next-icons";
 
-const Intro = () => {
+const Intro = ({ src }: { src: string }) => {
   const [playVideo, setPlayVideo] = useState(false);
   const vidRef = useRef<HTMLVideoElement>(null);
 
@@ -11,7 +11,7 @@ const Intro = () => {
       <video
         className="w-full h-full object-cover"
         ref={vidRef}
-        src="/assets/meal.mp4"
+        src={src}
         loop
         controls={false}
         muted
