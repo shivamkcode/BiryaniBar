@@ -1,6 +1,6 @@
 import React from "react";
-import Hero from "@/components/Hero";
-import History from "@/components/History";
+import Hero from "@/components/Sections/Hero";
+import History from "@/components/Sections/History";
 import { Chef, Gallery, Testimony } from "@/components";
 import { Metadata } from "next";
 

@@ -1,10 +1,9 @@
 import React from "react";
-import SubHeading from "./SubHeading";
 import Image from "next/image";
 import images from "@/public/constants/images";
-import Button from "./Button";
+import { SubHeading, Button } from "../index";
 
-const Hero = () => {
+const HomePageHero = () => {
   return (
     <div className="text-white flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-32 paddingX paddingY relative">
       <div className="flex flex-1 flex-col justify-center items-start lg:pl-10">
@@ -40,4 +39,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HomePageHero;

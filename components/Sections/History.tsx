@@ -1,14 +1,12 @@
 import images from "@/public/constants/images";
 import Image from "next/image";
 import React from "react";
-import SubHeading from "./SubHeading";
-import Intro from "./Intro";
-import Sign from "./Sign";
+import { SubHeading, Intro, Sign } from "../index";
 
 const History = () => {
   return (
-    <div>
-      <div className="flex flex-col items-center justify-center gap-12 paddingX paddingY">
+    <div className="flex flex-col items-center justify-center gap-10 lg:gap-24 paddingX paddingY">
+      <div className="flex flex-col items-center justify-center gap-12">
         <div className="flex flex-col items-center justify-center text-center gap-2">
           <SubHeading title="Our History" direction="center" />
           <h2 className="h2_title">Serving Customers For Over A decade</h2>
@@ -33,26 +31,26 @@ const History = () => {
                 <div className="flex flex-1 flex-col justify-center gap-2">
                   <h3 className="text-4xl">30+</h3>
                   <Image src={images.spoon} alt="spoon" />
-                  <h4 className="text-3xl text-white">Breakfast Options</h4>
+                  <h4 className="text-xl lg:text-3xl text-white">Breakfast Options</h4>
                 </div>
                 <div className="w-[1px] bg-gradient-to-b from-[rgba(250, 250, 250, .24)] from-0% via-[#FAFAFA] via-43% to-[rgba(250, 250, 250, 0)] to-93%" />
                 <div className="flex flex-1 flex-col justify-center gap-2">
                   <h3 className="text-4xl">50+</h3>
                   <Image src={images.spoon} alt="spoon" />
-                  <h4 className="text-3xl text-white">Dinner Options</h4>
+                  <h4 className="text-xl lg:text-3xl text-white">Dinner Options</h4>
                 </div>
                 <div className="w-[1px] bg-gradient-to-b from-[rgba(250, 250, 250, .24)] from-0% via-[#FAFAFA] via-43% to-[rgba(250, 250, 250, 0)] to-93%" />
-                <div className="flex flex-col justify-center gap-2">
+                <div className="flex flex-1 flex-col justify-center gap-2">
                   <h3 className="text-4xl">8</h3>
                   <Image src={images.spoon} alt="spoon" />
-                  <h4 className="text-3xl text-white">New Locations</h4>
+                  <h4 className="text-xl lg:text-3xl text-white">New Locations</h4>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center gap-10 paddingX paddingY relative">
+      <div className="flex flex-col items-center justify-center gap-10 relative">
         <Sign />
         <div className="flex flex-col items-center justify-center gap-8 text-center">
           <div className="flex flex-col items-center justify-center gap-2">

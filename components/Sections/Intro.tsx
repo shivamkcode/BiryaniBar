@@ -12,6 +12,7 @@ const Intro = ({ src }: { src: string }) => {
         className="w-full h-full object-cover"
         ref={vidRef}
         src={src}
+        playsInline
         loop
         controls={false}
         muted

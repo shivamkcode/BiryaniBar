@@ -1,5 +1,5 @@
 import React from "react";
-import { SubHeading } from "./index";
+import { SubHeading } from "../index";
 import Image from "next/image";
 import data from "@/public/constants/data";
 import images from "@/public/constants/images";

@@ -1,8 +1,7 @@
 import React from "react";
-import SubHeading from "./SubHeading";
+import { SubHeading, Button, Sign } from "../index";
 import Image from "next/image";
-import Button from "./Button";
-import Sign from "./Sign";
+
 const Gallery = () => {
   return (
     <div className="paddingX pr-0 paddingY flex flex-col lg:flex-row items-center gap-12 lg:gap-0 bg-black/50 relative">
@@ -28,7 +27,7 @@ const Gallery = () => {
           {[1, 2, 3, 4].map((item) => (
             <Image
               key={item}
-              src={`/assets/gallery0${item}.png`}
+              src={`/assets/gallery0${item}.webp`}
               alt="gallery"
               className="border border-golden/50 hover:opacity-80 transition-opacity duration-300"
               width={300}

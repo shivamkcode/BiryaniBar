@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@deemlol/next-icons": "^0.1.9",
+    "@react-google-maps/api": "^2.20.6",
+    "maplibre-gl": "^5.5.0",
     "next": "15.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -21,6 +23,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/react-map-gl": "^6.1.7",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
     "tailwindcss": "^4",

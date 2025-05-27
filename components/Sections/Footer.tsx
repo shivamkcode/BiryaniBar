@@ -1,13 +1,13 @@
 import React from "react";
-import SubHeading from "./SubHeading";
-import Button from "./Button";
+import SubHeading from "../components/SubHeading";
+import Button from "../components/Button";
 import Image from "next/image";
 import { Facebook, Instagram, Twitter } from "@deemlol/next-icons";
 import images from "@/public/constants/images";
 
 const Footer = () => {
   return (
-    <div className="bg-[url('/assets/bg.png')] bg-cover bg-center bg-no-repeat paddingX paddingY relative flex flex-col gap-10 lg:gap-30 mt-60 lg:mt-70">
+    <div className="bg-[url('/assets/bg.webp')] bg-cover bg-center bg-no-repeat paddingX paddingY relative flex flex-col gap-10 lg:gap-30 mt-60 lg:mt-70">
       <div className="flex flex-col gap-10 items-center justify-center bg-black border border-golden/20 py-10 px-6 -mt-60 lg:-mt-70">
         <div className="flex flex-col gap-6 text-center">
           <div className="flex flex-col gap-2">
@@ -16,13 +16,13 @@ const Footer = () => {
           </div>
           <p className="text-white text-sm">And never miss latest Updates!</p>
         </div>
-        <div className="flex gap-6 items-center w-[80%] lg:w-[60%]">
+        <div className="flex flex-col lg:flex-row gap-6 items-center w-[80%] lg:w-[60%]">
           <input
-            className="border border-white py-2 px-6 placeholder:text-gray w-full text-grey"
-            type="text"
+            className="border border-white py-2 px-6 placeholder:text-gray w-full text-grey outline-none"
+            type="email"
             placeholder="Your Email Address"
           />
-          <Button title="Subscribe" href="/newsletter"/>
+          <Button title="Subscribe" href="/"/>
         </div>
       </div>
       <div className="flex flex-col gap-10 items-center">

@@ -269,6 +269,29 @@ const dessertMenu = [
   },
 ];
 
-const data = { wines, cocktails, awards, testimony, foodMenu, drinksMenu, dessertMenu };
+const faqs = [
+  {
+    question: 'What are your opening hours?',
+    answer: 'We are open from 11:00 AM to 10:00 PM from Monday to Saturday, and from 12:00 PM to 9:00 PM on Sundays.'
+  },
+  {
+    question: 'Do you offer vegetarian options?',
+    answer: 'Yes, we have a variety of vegetarian dishes available on our menu, including Vegetable Biryani and Paneer Curry.'
+  },
+  {
+    question: 'Can I make a reservation?',
+    answer: 'Yes, you can make a reservation by calling us at (123) 456-7890 or through our website.'
+  },
+  {
+    question: 'Do you offer delivery services?',
+    answer: 'Yes, we offer delivery services through our partners like Uber Eats and DoorDash.'
+  },
+  {
+    question: 'Is there parking available?',
+    answer: 'Yes, we have ample parking space available for our customers.'
+  }
+];
+
+const data = { wines, cocktails, awards, testimony, foodMenu, drinksMenu, dessertMenu, faqs };
 
 export default data;

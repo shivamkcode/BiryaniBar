@@ -1,14 +1,14 @@
 import React from "react";
-import SubHeading from "./SubHeading";
+import SubHeading from "../components/SubHeading";
 import data from "@/public/constants/data";
-import MenuItem from "./MenuItem";
+import MenuItem from "../components/MenuItem";
 
 const Menu = () => {
   return (
     <div className="flex flex-col items-center justify-center paddingX paddingY gap-10">
       <div className="flex flex-col items-center justify-center">
         <SubHeading title="Menu that fits your palatte" direction="center" />
-        <h2 className="h2_title">Menu</h2>
+        <h2 className="h2_title">Our Menus</h2>
       </div>
       <div className="flex flex-col gap-6 lg:flex-row">
         <div className="flex flex-col gap-8">

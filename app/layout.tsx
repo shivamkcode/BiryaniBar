@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${cormorantUpright.variable} ${openSans.variable} antialiased bg-[url("/assets/wave_element.svg")] bg-black bg-cover bg-center bg-no-repeat`}
+        className={`${cormorantUpright.variable} ${openSans.variable} antialiased bg-[url("/assets/wave_element.svg")] bg-black bg-cover bg-center bg-no-repeat pt-22`}
       >
         <Navbar />
         {children}

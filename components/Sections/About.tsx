@@ -1,9 +1,7 @@
 import images from "@/public/constants/images";
 import Image from "next/image";
 import React from "react";
-import SubHeading from "./SubHeading";
-import Button from "./Button";
-import Sign from "./Sign";
+import { SubHeading, Button, Sign } from "../index";
 
 const About = () => {
   return (

@@ -9,15 +9,15 @@ import {
   Reservations,
   SpecialMenu,
   Testimony,
+  HomePageHero,
+  Poison,
+  HappyHour,
 } from "@/components";
-import HappyHour from "@/components/HappyHour";
-import Hero from "@/components/Header";
-import Poison from "@/components/Poison";
 
 const Home = () => {
   return (
     <div>
-      <Hero />
+      <HomePageHero />
       <AboutUs />
       <Reservations />
       <SpecialMenu />

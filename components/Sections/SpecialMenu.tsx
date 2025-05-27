@@ -1,11 +1,8 @@
 import React from "react";
-import SubHeading from "./SubHeading";
 import images from "@/public/constants/images";
 import Image from "next/image";
-import Button from "./Button";
 import data from "@/public/constants/data";
-import Sign from "./Sign";
-import MenuItem from "./MenuItem";
+import { SubHeading, Sign, MenuItem, Button } from "../index";
 
 const SpecialMenu = () => {
   return (

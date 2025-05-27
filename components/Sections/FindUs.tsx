@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import SubHeading from "./SubHeading";
-import Button from "./Button";
+import { SubHeading, Button } from "../index";
 import images from "@/public/constants/images";
 
 const FindUs = () => {

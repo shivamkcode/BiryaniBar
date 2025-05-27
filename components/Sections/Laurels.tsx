@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React from "react";
 import images from "@/public/constants/images";
-import SubHeading from "./SubHeading";
+import { SubHeading } from "../index";
 import data from "@/public/constants/data";
 
 const Laurels = () => {
   return (
     <div className='bg-[url("/assets/bg.webp")] bg-cover bg-center bg-no-repeat paddingX paddingY flex flex-col lg:flex-row justify-center items-center gap-20'>
-      <div className="flex flex-col justify-center gap-12">
+      <div className="flex flex-1 flex-col justify-center gap-12">
         <div>
           <SubHeading title="Awards & Recognition" />
           <h2 className="h2_title">Our Laurels</h2>
@@ -28,7 +28,7 @@ const Laurels = () => {
           ))}
         </div>
       </div>
-      <div className="w-full items-center justify-center">
+      <div className="flex-1 items-center justify-center">
         <Image src={images.laurels} alt="laurels" />
       </div>
     </div>

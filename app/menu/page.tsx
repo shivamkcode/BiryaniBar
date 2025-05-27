@@ -1,8 +1,8 @@
 import React from "react";
-import Menu from "@/components/Menu";
-import HappyHour from "@/components/HappyHour";
+import Menu from "@/components/Sections/Menu";
+import HappyHour from "@/components/Sections/HappyHour";
 import { Gallery, Reservations } from "@/components";
-import Hero from "@/components/Hero";
+import Hero from "@/components/Sections/Hero";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

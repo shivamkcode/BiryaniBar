@@ -1,8 +1,8 @@
 import images from "@/public/constants/images";
 import Image from "next/image";
 import React from "react";
-import SubHeading from "./SubHeading";
-import Sign from "./Sign";
+import { SubHeading, Sign } from "../index";
+
 const Chef = () => {
   return (
     <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 paddingX paddingY bg-[url('/assets/bg.webp')] bg-cover bg-center bg-no-repeat relative">

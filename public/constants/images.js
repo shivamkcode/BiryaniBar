@@ -31,6 +31,7 @@ import testimony04 from '../assets/testimony04.webp';
 import history01 from '../assets/history01.webp'
 import history02 from '../assets/history02.webp'
 import B from '../assets/B.svg'
+import map from '../assets/map.webp'
 
 // Assign the object to a variable
 const images = {
@@ -67,6 +68,7 @@ const images = {
   history01,
   history02,
   B,
+  map,
 };
 
 // Export the variable as the default export
