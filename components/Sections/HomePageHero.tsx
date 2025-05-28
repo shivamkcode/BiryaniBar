@@ -12,9 +12,7 @@ const HomePageHero = () => {
           The key to fine dining
         </h1>
         <p className="my-4 md:my-8 font-alt text-grey text-sm md:text-base">
-          Sit tellus lobortis sed senectus vivamus molestie. Condimentum
-          volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
-          aliquam amet tellus{" "}
+        Welcome to Biryani Bar, where our passion for cooking shines in every dish. Our chefs pour their heart and soul into creating meals that tell a story. Using only the finest ingredients, we aim to delight your taste buds and warm your heart. Join us for a dining experience that&apos;s personal, memorable, and crafted just for you.
         </p>
         <Button title="Explore Menu" href="/menu" />
       </div>

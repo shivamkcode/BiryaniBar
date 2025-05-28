@@ -21,7 +21,7 @@ const SpecialMenu = () => {
             <MenuItem key={index} item={wine} />
           ))}
         </div>
-        <div className="flex w-full h-full">
+        <div className="flex flex-1 w-[80vw] lg:w-full h-full">
           <Image src={images.menu} alt="menu" />
         </div>
         <div className="flex flex-col gap-10 px-8 lg:px-0">

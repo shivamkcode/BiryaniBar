@@ -14,12 +14,13 @@ const About = () => {
         <Image src={images.about01} alt="about" />
         <div className="flex flex-col gap-2">
           <SubHeading title="About Us" />
-          <h2 className="h2_title">Food, Drinks, Entertainment In One</h2>
+          <h2 className="text-golden text-4xl sm:text-6xl font-base tracking-wider">Food, Drinks, Entertainment In One</h2>
         </div>
         <p className="font-alt text-grey text-sm">
-          Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat.
-          Risus placerat morbi volutpat habitasse interdum mi aliquam In sed
-          odio nec aliquet.
+          At Biryani Bar, we are committed to making every dining experience
+          special. Our chefs and friendly staff work together to create an
+          inviting atmosphere. Each dish is crafted with love, reflecting our
+          dedication to culinary excellence and making your visit Memorable.
         </p>
         <Button title="Know More" href="/about" />
       </div>

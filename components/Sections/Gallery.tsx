@@ -13,8 +13,8 @@ const Gallery = () => {
         </div>
         <div className="flex flex-col gap-6 items-start">
           <p className="font-alt text-grey text-sm lg:text-base w-[80%] font-thin">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
-            mattis ipsum turpis elit elit scelerisque egestas mu.
+            Explore our culinary creations and vibrant dining experiences.
+            Follow us on Instagram for more delicious moments.
           </p>
           <Button title="View More" href="/gallery" />
         </div>

@@ -19,10 +19,7 @@ const Chef = () => {
           <span className="font-base inline-block">
             <Image className="w-10 h-10" src={images.quote} alt="quote" />
           </span>{" "}
-          Lorem ipsum dolor sit auctor sit iaculis in arcu. Vulputate nulla
-          lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac
-          consequat, aliquam molestie lectus eu. Congue iaculis integer
-          curabitur semper sit nunc.
+          Cooking is my passion, and Biryani Bar is my canvas. I believe in crafting dishes that not only satisfy your hunger but also tell a story. Our team uses the freshest ingredients and combines them with creativity and love to create unforgettable dining experiences. Come, be a part of our journey and let us share our story with you, one dish at a time.
         </p>
         <div className="flex flex-col lg:flex-row gap-2">
           <p className="text-golden text-2xl font-base">Kevin Luo</p>
