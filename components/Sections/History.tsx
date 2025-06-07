@@ -63,7 +63,7 @@ const History = () => {
             odio nec aliquet eu proin mauris et.
           </p>
         </div>
-        <Intro src="/assets/happyHour.mp4" />
+        <Intro src="/assets/happyHour.mp4" poster="/assets/intro02.webp" />
       </div>
     </div>
   );

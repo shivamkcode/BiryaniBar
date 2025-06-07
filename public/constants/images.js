@@ -32,7 +32,8 @@ import history01 from '../assets/history01.webp'
 import history02 from '../assets/history02.webp'
 import B from '../assets/B.svg'
 import map from '../assets/map.webp'
-
+import intro01 from '../assets/intro01.webp'
+import intro02 from '../assets/intro02.webp'
 // Assign the object to a variable
 const images = {
   bg,
@@ -69,6 +70,8 @@ const images = {
   history02,
   B,
   map,
+  intro01,
+  intro02,
 };
 
 // Export the variable as the default export

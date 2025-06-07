@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 import { Play, Pause } from "@deemlol/next-icons";
 
-const Intro = ({ src }: { src: string }) => {
+const Intro = ({ src, poster }: { src: string, poster: string }) => {
   const [playVideo, setPlayVideo] = useState(false);
   const vidRef = useRef<HTMLVideoElement>(null);
 
@@ -13,6 +13,7 @@ const Intro = ({ src }: { src: string }) => {
         ref={vidRef}
         src={src}
         playsInline
+        poster={poster}
         loop
         controls={false}
         muted

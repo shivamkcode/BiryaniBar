@@ -20,6 +20,7 @@ const Reservations = () => {
     time: "",
   });
   const [confirmReservation, setConfirmReservation] = useState(false);
+  const [timer, setTimer] = useState(300);
 
   const handleBookNow = () => {
     console.log(reservation);
@@ -67,10 +68,35 @@ const Reservations = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dates, times]);
 
+  useEffect(() => {
+    let interval: NodeJS.Timeout;
+    if (confirmReservation) {
+      interval = setInterval(() => {
+        setTimer((prevTimer) => {
+          if (prevTimer <= 1) {
+            clearInterval(interval);
+            setConfirmReservation(false);
+            return 300;
+          }
+          return prevTimer - 1;
+        });
+      }, 1000);
+    } else {
+      setTimer(300);
+    }
+    return () => clearInterval(interval);
+  }, [confirmReservation]);
+
+  const formatTime = (seconds: number) => {
+    const minutes = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${minutes}:${secs < 10 ? "0" : ""}${secs}`;
+  };
+
   return (
     <div className="flex items-center justify-center paddingX paddingY relative">
       <Sign direction="left" />
-      <div className="flex flex-col items-center justify-center gap-10 bg-black text-center border border-golden/20 p-8 shadow-golden/10 shadow-lg w-[90%] lg:w-auto">
+      <div className="flex flex-col items-center justify-center gap-10 bg-black text-center border border-golden/20 p-8 shadow-golden/10 shadow-lg w-full lg:w-auto">
         <div>
           <SubHeading direction="center" title="Reservations" />
           <h2 className="h2_title">Book A Table</h2>
@@ -117,18 +143,46 @@ const Reservations = () => {
       {confirmReservation && (
         <>
           <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-10" />
-          <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-black border border-golden/20 p-8 shadow-golden/10 shadow-lg rounded-2xl">
+          <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-black border border-golden/20 p-8 shadow-golden/10 shadow-lg">
             <div className="flex flex-col gap-6 text-center">
               <h2 className="h2_title">Confirm Reservation</h2>
               <p className="text-grey text-sm -mt-2">
                 Confirm your reservation for{" "}
-                <span className="font-semibold text-crimson">{reservation.people}</span> on{" "}
-                <span className="font-semibold text-crimson">{reservation.date}</span> at{" "}
-                <span className="font-semibold text-crimson">{reservation.time > "12" ? `${reservation.time} PM` : `${reservation.time} AM`}</span>.
+                <span className="font-semibold text-crimson">
+                  {reservation.people}
+                </span>{" "}
+                on{" "}
+                <span className="font-semibold text-crimson">
+                  {reservation.date}
+                </span>{" "}
+                at{" "}
+                <span className="font-semibold text-crimson">
+                  {reservation.time > "12"
+                    ? `${reservation.time} PM`
+                    : `${reservation.time} AM`}
+                </span>
+                .
+              </p>
+              <p className="text-grey text-sm">
+                Your reservation will be held for{" "}
+                <span className="font-semibold text-crimson">
+                  {formatTime(timer)}
+                </span>{" "}
+                {timer <= 60 ? "seconds" : timer > 120 ? "minutes" : "minute"}
               </p>
               <div className="flex gap-2 justify-evenly items-center">
-                <button className="bg-golden hover:bg-crimson font-base font-bold tracking-wider leading-5 text-base py-2 px-6 rounded-[1px] border-none outline-none cursor-pointer text-black" onClick={handleBookNow}>Confirm</button>
-                <button className="bg-crimson hover:bg-crimson/80 font-base font-bold tracking-wider leading-5 text-base py-2 px-6 rounded-[1px] border-none outline-none cursor-pointer text-black" onClick={() => setConfirmReservation(false)}>Cancel</button>
+                <button
+                  className="bg-golden hover:bg-crimson font-base font-bold tracking-wider leading-5 text-base py-2 px-6 rounded-[1px] border-none outline-none cursor-pointer text-black"
+                  onClick={handleBookNow}
+                >
+                  Confirm
+                </button>
+                <button
+                  className="bg-crimson hover:bg-crimson/80 font-base font-bold tracking-wider leading-5 text-base py-2 px-6 rounded-[1px] border-none outline-none cursor-pointer text-black"
+                  onClick={() => setConfirmReservation(false)}
+                >
+                  Cancel
+                </button>
               </div>
             </div>
           </div>

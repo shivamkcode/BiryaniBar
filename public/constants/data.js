@@ -83,7 +83,7 @@ const testimony = [
   {
     id: 1,
     image: images.testimony01,
-    name: 'John Doe',
+    name: 'Emily Johnson',
     feedback: 'Amazing experience! The food was delicious and the service was excellent.',
     to: 'Sommelier'
   },
@@ -97,7 +97,7 @@ const testimony = [
   {
     id: 3,
     image: images.testimony03,
-    name: 'Emily Johnson',
+    name: 'John Doe',
     feedback: 'The ambiance was perfect and the staff were very friendly.',
     to: 'Manager'
   },

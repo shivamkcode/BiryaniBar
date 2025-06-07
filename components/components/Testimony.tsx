@@ -11,7 +11,7 @@ const Testimony = () => {
         <SubHeading title="Testimony" direction="center" />
         <h2 className="h2_title">Happy Customers</h2>
       </div>
-      <div className="flex flex-wrap gap-8 lg:gap-y-16 items-center justify-center">
+      <div className="flex flex-wrap gap-8 gap-y-16 lg:gap-y-16 items-center justify-center">
         {data.testimony.map((item, index) => (
           <div
             key={item.id}

@@ -13,8 +13,7 @@ const FindUs = () => {
         </div>
         <div>
           <p className="text-white text-xl font-base">
-            Lane Ends Biryani, Whatshaw Lane, Stratford-upon-Avon, Warwickshire,
-            CV37 6BB
+          825 Saginaw Pkwy Unit #4, Cambridge, ON N1T 0E2
           </p>
           <div className="flex flex-col gap-4">
             <p className="text-golden text-xl font-base">Opening Hours</p>

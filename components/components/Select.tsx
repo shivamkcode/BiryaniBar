@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { GrDown, GrUp } from "react-icons/gr";
 
 const Select = ({
@@ -19,6 +19,10 @@ const Select = ({
     onChange(option);
     setIsOpen(false);
   };
+
+  useEffect(() => {
+    setSelectedOption(options[0]);
+  }, [options]);
 
   return (
     <>

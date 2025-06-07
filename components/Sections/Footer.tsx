@@ -4,6 +4,7 @@ import Button from "../components/Button";
 import Image from "next/image";
 import { Facebook, Instagram, Twitter } from "@deemlol/next-icons";
 import images from "@/public/constants/images";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -22,7 +23,7 @@ const Footer = () => {
             type="email"
             placeholder="Your Email Address"
           />
-          <Button title="Subscribe" href="/"/>
+          <Button title="Subscribe" href="/" />
         </div>
       </div>
       <div className="flex flex-col gap-10 items-center">
@@ -30,23 +31,34 @@ const Footer = () => {
           <div className="flex flex-col gap-6 flex-1 items-center justify-center">
             <h3 className="text-crimson text-3xl font-base">Contact Us</h3>
             <div className="flex flex-col gap-2 font-alt text-grey text-sm text-center">
-              <p>9 W 53rd St, New York, NY 10019, United States</p>
+              <p>825 Saginaw Pkwy Unit #4, Cambridge, ON N1T 0E2</p>
               <p>+1 212-344-1230</p>
               <p>+1 212-344-1230</p>
             </div>
           </div>
           <div className="flex flex-col gap-6 flex-1 items-center justify-center">
-            <h2 className="h2_title uppercase font-semibold text-center">Biryani Bar</h2>
+            <Link
+              href="/"
+              className="h2_title uppercase font-semibold text-center"
+            >
+              Biryani Bar
+            </Link>
             <div className="flex flex-col gap-4 items-center justify-center text-center">
               <p className="text-white">
                 &quot;The best way to find yourself is to lose yourself in the
                 service of others.&quot;
               </p>
-              <Image src={images.spoon} alt="spoon"/>
+              <Image src={images.spoon} alt="spoon" />
               <div className="flex gap-4 text-white">
-                <Facebook />
-                <Twitter />
-                <Instagram />
+                <Link href="https://www.facebook.com/" target="_blank">
+                  <Facebook />
+                </Link>
+                <Link href="https://www.twitter.com/" target="_blank">
+                  <Twitter />
+                </Link>
+                <Link href="https://www.instagram.com/" target="_blank">
+                  <Instagram />
+                </Link>
               </div>
             </div>
           </div>

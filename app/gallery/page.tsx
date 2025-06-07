@@ -33,7 +33,7 @@ const Gallery = () => {
         ))}
       </div>
       <AboutUs />
-      <Intro src="/assets/meal.mp4" />
+      <Intro src="/assets/meal.mp4" poster="/assets/intro01.webp" />
       <FindUs />
     </div>
   );
